@@ -1,0 +1,18 @@
+{
+  "id": "fintech-env",
+  "name": "Fintech Environment",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080",
+      "type": "string",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string",
+      "enabled": true
+    }
+  ]
+}

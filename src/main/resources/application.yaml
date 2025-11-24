@@ -8,9 +8,51 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update  # auto-create tables based on Entities
-    show-sql: true
+    show-sql: false
     properties:
       hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
 server:
   port: 8080
+  servlet:
+    context-path: /
+
+# JWT Configuration
+jwt:
+  secret: ${FINTECH_JWT_SECRET:your-secret-key-change-in-production}
+  expiration: 3600  # 1 hour in seconds
+
+# AES Encryption
+aes:
+  key: ${FINTECH_AES_KEY:your-aes-key-16-chars}
+
+# Compliance Configuration
+compliance:
+  aml-threshold: 50000.0
+
+# AI Service Configuration
+ai-service:
+  url: http://localhost:8000
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.fintech.backend: DEBUG
+    org.springframework.security: DEBUG

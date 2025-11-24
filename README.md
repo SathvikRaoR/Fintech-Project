@@ -1,4 +1,5 @@
-# Fintech MVP: AI-Powered Digital Banking & Investment Hub
+# Fintech <img width="1536" height="1024" alt="ChatGPT Image Nov 24, 2025, 11_32_49 AM" src="https://github.com/user-attachments/assets/60de4a8a-ac51-4882-80c8-ece88d2137d4" />
+MVP: AI-Powered Digital Banking & Investment Hub
 
 A production-ready, open-source fintech platform demonstrating advanced features like AI-driven fraud detection, credit scoring, and intelligent financial advice through FinBot.
 
